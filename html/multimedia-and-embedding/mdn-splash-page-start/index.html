@@ -101,14 +101,14 @@
       <h1>Mozilla</h1>
       <!-- insert <img> element, link to the small
           version of the Firefox logo -->
-          <img src="F:\git\learning-area\html\multimedia-and-embedding\mdn-splash-page-start\originals\firefox_logo-only_RGB.png" >
+          <img src="originals/firefox_logo-only_RGB.png" alt="The firefox Logo">
 
     </header>
 
     <main>
       <article>
         <!-- insert iframe from youtube -->
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/ojcNcvb1olg" frameborder="0"
+        <iframe width="400" height="250" src="https://www.youtube.com/embed/ojcNcvb1olg" frameborder="0"
          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
         <h2>Rocking the free web</h2>
@@ -121,23 +121,35 @@
       <div class="further-info">
         <!-- insert images with srcsets and sizes -->
         <a href="https://www.mozilla.org/en-US/firefox/new/">
-          <img src="F:\git\learning-area\html\multimedia-and-embedding\mdn-splash-page-start\originals\firefox_logo-only_RGB.png" >
+          <img srcset="firefox-logo120.png 120w,
+                      rsz_firefox_logo-only_rgb-400px.png 400w"
+          sizes="(max-width: 500px) 120px,
+                      400px"
+          src="rsz_firefox_logo-only_rgb-400px.png" alt="Firefox Logo" >
         </a>
         <a href="https://www.mozilla.org/">
-          <img src="F:\git\learning-area\html\multimedia-and-embedding\mdn-splash-page-start\originals\mozilla-dinosaur-head.png">
+          <img srcset="rsz_mozilla-dinosaur-head-120px.png 120w, 
+                        rsz_mozilla-dinosaur-head-400px.png 400w"
+            sizes="(max-width: 500px) 120px,
+                  400px"
+           src="rsz_mozilla-dinosaur-head-400px.png" alt="Mozilla dinosaur head logo">
         </a>
         <a href="https://addons.mozilla.org/">
-          <img src="F:\git\learning-area\html\multimedia-and-embedding\mdn-splash-page-start\originals\firefox-addons.jpg">
+          <img srcset="rsz_firefox-addons-120px.jpg 120w,
+          originals/firefox-addons.jpg 400px"
+          sizes="(max width: 500px 120px,
+          400px"
+          src="originals/firefox-addons.jpg" alt="firefox addons">
         </a>
         <a href="https://developer.mozilla.org/en-US/">
-          <img src="F:\git\learning-area\html\multimedia-and-embedding\mdn-splash-page-start\originals\mdn.svg">
+          <img src="originals/mdn.svg" alt="mdn">
         </a>
         <div class="clearfix"></div>
       </div>
 
       <div class="red-panda">
         <!-- insert picture element -->
-        <img src="F:\git\learning-area\html\multimedia-and-embedding\mdn-splash-page-start\originals\red-panda.jpg">
+        <img src="originals/red-panda.jpg" alt="landscape">
       </div>
 
     </main>
